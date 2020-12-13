@@ -1,0 +1,32 @@
+﻿
+@using Microsoft.AspNetCore.Routing;
+@{
+    ViewData["Title"] = "WeatherForecast";
+}
+
+<h1>Get table</h1>
+<script>
+
+    function f() {
+        var s = '<div id="myDiv">dib1</div>';
+        var htmlObject = document.createElement('div');
+        htmlObject.innerHTML = s;
+        htmlObject.getElementById("myDiv").style.marginTop = something;
+    }
+
+    f();
+
+    string s = '<div id="myDiv">qwert</div>'
+    var htmlObject = $(s);
+
+</script>
+
+@*@ViewData["table"]
+    @Html.Encode(ViewData["table"])*@
+@*Html.Raw(ViewData["table"])*@
+
+<!--<%= ViewData["table"]%>-->
+<!--<%: MvcHtmlString.Create(ViewData["Message"]) %>-->
+
+@*HtmlEncoder.Encode(@ViewData["table"].ToString())*@
+

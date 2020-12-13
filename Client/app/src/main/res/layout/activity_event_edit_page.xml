@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50px"
+    android:paddingLeft="30px"
+    android:paddingRight="30px">
+
+    <TextView
+        android:textSize="22sp"
+        android:text="Название:"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/event_title_edit"
+        android:textSize="22sp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"  />
+
+    <!--<TextView
+        android:textSize="22sp"
+        android:text="Дата:"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/event_date_edit"
+        android:textSize="22sp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"  />-->
+
+    <TextView
+        android:id="@+id/date_edit_page"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="datePickerHandler"
+        android:hint="Дата"
+        android:textSize="22sp">
+    </TextView>
+
+    <TextView
+        android:textSize="22sp"
+        android:text="Описание:"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/description_edit"
+        android:textSize="22sp"
+        android:layout_width="200dp"
+        android:layout_height="120dp"  />
+
+    <TextView
+        android:textSize="22sp"
+        android:layout_marginTop="20px"
+        android:text="Список записавшихся:"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/members_list"
+        android:layout_width="match_parent"
+        android:layout_height="380px" />
+
+    <TableRow>
+        <Button
+            android:text="сохранить"
+            android:onClick="EditEvent"
+            android:textAlignment="center"
+            android:background="@color/color2"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="420dp"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:text="удалить"
+            android:layout_marginTop="20px"
+            android:onClick="DeleteEvent"
+            android:textAlignment="center"
+            android:background="@color/color2"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="420dp"/>
+    </TableRow>
+
+
+</TableLayout>
