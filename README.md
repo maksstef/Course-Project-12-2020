@@ -1,4 +1,4 @@
-# Course-Project-12-2020
+# Event-manager
 
 ## Курсовой проект 4 курс 1 семестр
 
